@@ -28,8 +28,8 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use('/api/instructores', instructorRoutes);
-app.use('/api/alumnos', alumnoRoutes);
+app.use('api/instructores', instructorRoutes);
+app.use('api/alumnos', alumnoRoutes);
 
 const PORT = process.env.PORT || 4000;
 
